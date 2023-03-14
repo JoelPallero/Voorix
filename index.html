@@ -7,15 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css -->
-
-    <link rel="preload" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-
-    <link rel="preload" href="/css/style.css">
-    <link rel="stylesheet" href="/css/style.css">
-
+    <link rel="stylesheet" href="build/css/app.css">
+    
     <!-- animaciones con magic.css (hay que instalar primero: npm i magic.css) -->
-    <link rel="stylesheet" href="yourpath/magic.css">
+    <!-- <link rel="stylesheet" href="yourpath/magic.css"> -->
     <!-- <link rel="stylesheet" href="yourpath/magic.min.css"> -->
 
 
@@ -24,18 +19,17 @@
 
 <body>
 
-    <header class="header">
+    <header class="header space-between">
 
         <div class="logo">
-            <a href="/">
-
+            <a href="/" class="center no-padding-margin">
                 <picture>
-                    <img class="logo-azul " srcset="/img/Voorix-logo-azul-dinamico.png" alt="logo" type="image/jpeg">
-                    <img class="logo-blanco invisible" src="/img/Voorix-logo-blanco-dinamico.png" alt="logo"
+                    <img class="logo-azul logo-size" src="build/img/Voorix-logotipo-azul.png" alt="logo" type="image/jpeg">
+                    <img class="logo-blanco logo-size invisible" src="build/img/Voorix-logotipo-blanco.png" alt="logo"
                         type="image/jpeg">
                 </picture>
 
-                <div class="nombre-logo">
+                <div class="nombre-logo center">
                     <span class="letra letra-Uno">
                         <h1>O</h1>
                     </span>
@@ -56,7 +50,7 @@
         </div>
 
         <div class="navbar">
-            <ul class="menu">
+            <ul class="menu center">
                 <li class="item-menu">
                     <a href="/" class="item">
                         Nosotros
@@ -73,7 +67,7 @@
                     </a>
                 </li>
                 <li class="item-menu">
-                    <div class="language">
+                    <div class="language center">
                         <a href="/">
                             Esp
                         </a>
@@ -83,9 +77,9 @@
                     </div>
                 </li>
                 <li class="item-menu">
-                    <button class="dark-mode">
+                    <button class="dark-mode-button transition-all center relative-element">
                         <div class="light">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                            <svg class="absolute-element" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                 viewBox="0,0,256,256" style="fill:transparent;">
                                 <g fill="transparent" fill-rule="nonzero" stroke="none" stroke-width="1"
                                     stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
@@ -107,10 +101,17 @@
                         </div>
 
                         <div class="dark">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><title>Moon</title><path id="Moon" d="M24.86,15.53a.5.5,0,0,0-.57,0A10.71,10.71,0,0,1,9.57.79.5.5,0,0,0,9,0,12.77,12.77,0,1,0,25,16,.5.5,0,0,0,24.86,15.53Z" fill="#365fd9"></path></svg>
+                            <svg class="absolute-element" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" 
+                            x="0px" y="0px" width="10" height="15"
+                            viewBox="0 0 25 25">
+                                <title>Moon</title>
+                                <path id="Moon" d="M24.86,15.53a.5.5,0,0,0-.57,0A10.71,10.71,0,0,1,9.57.79.5.5,0,0,0,9,0,12.77,12.77,0,1,0,25,16,.5.5,0,0,0,24.86,15.53Z" fill="#365fd9">
+
+                                </path>
+                            </svg>
                         </div>
 
-                        <span class="circle-slide"></section>
+                        <span class="circle-slide absolute-element transition-all"></section>
                     </button>
                 </li>
             </ul>
@@ -121,7 +122,7 @@
     <div class="page-up">
         <a href="#">
             <div class="button-up">
-                <img src="/img/arrow-up-gris.png" alt="">
+                <!-- <img src="/img/arrow-up-gris.png" alt=""> -->
             </div>
         </a>
     </div>
@@ -174,8 +175,6 @@
 
 
 
-    <script src="/js/script.js"></script>
-    <script src="/js/modernizr.js"></script>
 </body>
 
 </html>

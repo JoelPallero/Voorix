@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    transition: all .5s ease-in-out;
+}
+
+*,
+*:before,
+*:after {
+    font-family: v.$sizeParaph;
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 2;
+    color: v.$negro;
+    background-color: v.$grisClaro;
+}
+
+h1{
+    font-size: v.$fuente_principal;
+}
+
+h2{
+    font-size: v.$sizeSubTitle;
+}
+
+a{
+    text-decoration: none;
+    font-weight: v.$regular;
+}
+
+img{
+    max-width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+ul li{    
+    list-style: none;
+}

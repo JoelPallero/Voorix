@@ -83,54 +83,6 @@ ul li{
 
 /* HEADER */
 
-.header img{
-    width: 10rem;
-}
-
-.header{
-    width: 100%;
-    height: 10rem;
-    padding: 2rem 5rem;
-    margin: 0;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.nombre-logo{
-    display: flex;
-    padding-top: 2rem;
-    margin-left: -3.6rem;
-}
-
-.letra h1{    
-    color: var(--color-fifth);
-    font-size: 3.6rem;
-}
-
-.letra-Active{
-    
-}
-
-.invisible{
-    display: none;
-    transition: all 1s ease-in-out;
-}
-
-.header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .header ul li{
     margin: 1rem;
     padding: 0 1rem;

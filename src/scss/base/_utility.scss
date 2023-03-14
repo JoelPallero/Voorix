@@ -1,0 +1,57 @@
+@use 'base/variables' as v;
+
+.section {
+    margin-top: v.$separation;
+    margin-bottom: v.$separation;
+}
+
+.align-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible{    
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+.relative-element{
+    position: relative;
+}
+
+.absolute-element{
+    position: absolute;
+}
+
+.fixed-element{
+    background-color: #212121;
+    position: fixed;
+}
+
+.logo-size{
+    width: 10rem;
+}
+
+.transition-all{    
+    transition: all .5s ease-in-out;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.no-margin{
+    margin: 0;
+}

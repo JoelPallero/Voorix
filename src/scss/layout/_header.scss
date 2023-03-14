@@ -1,0 +1,62 @@
+@use 'base/variables' as v;
+
+.header{
+    width: 100%;
+    height: 10rem;
+    padding: 2rem 5rem;
+    background-color: transparent;
+}
+
+.logo a{
+    cursor: pointer;
+}
+
+.nombre-logo{
+    padding-top: 2rem;
+    margin-left: -3.6rem;
+    color: v.$azul;
+}
+
+.item-menu a{
+    padding: 0 1rem;
+    color: v.$negro;
+}
+
+/* dark mode button */
+
+.dark-mode-button{    
+    width: 3.5rem;
+    height: 1.5rem;
+    padding: 0 1rem;
+    background-color: #fff;
+    border: none;
+    border: 1px solid v.$azul;
+    border-radius: 15px;    
+}
+
+.light svg{
+    top: -.8px;
+    left: 0.1rem;
+}
+
+.dark svg{
+    top: -.8px;
+    right: 3px;
+}
+
+.circle-slide{
+    width: 1.7rem;
+    height: 1.7rem;
+    top: -2px;
+    right: 0;
+    clip-path: circle(50% at center);
+    background-color: v.$azul;
+    cursor: pointer;
+    transform: translateX(1.5px);
+}
+
+.circle-active{
+    transform: translateX(-18px);
+    background-color: v.$blanco;
+}
+
