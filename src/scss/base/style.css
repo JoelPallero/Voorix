@@ -1,0 +1,286 @@
+:root{
+    --color-primary: #ffffff;
+    --color-secondary:  #727272;
+    --color-tertiary:  #dedede;
+    --color-quarter:  #212121;
+    --color-fifth:  #3254D3;
+    --color-ok:  ;
+    --color-info:  ;
+    --color-warning:  rgb(245, 162, 75);
+    --color-danger:  ;
+     
+    /* Fuentes */ 
+    --typo-General: "Segoe UI";
+    --typo-Title:  ;
+    --typo-SubTitle:  ;
+    --typo-Paraph:  ;
+    --size-Title:  3.8rem;
+    --size-SubTitle: 2.4rem;
+    --size-Paraph: 1.6rem;
+    --size-Link:  ;
+    --size-Button:  2rem;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    transition: all .5s ease-in-out;
+}
+
+*,
+*:before,
+*:after {
+    font-family: var(--fuenteParrafos);
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 2;
+    color: var(--color-quarter);
+    background-color: var(--color-tertiary);
+    transition: all .5s ease-in-out;
+}
+
+h1{
+    font-size: var(--size-Title);
+    transition: all .5s ease-in-out;
+}
+
+h2{
+    font-size: var(--size-SubTitle);
+    transition: all .5s ease-in-out;
+}
+
+button{
+    width: 20rem;
+    height: 5rem;
+    margin: 2rem;
+    padding: .5rem 2rem;
+    font-size: var(--size-Button);
+    text-transform: uppercase;
+    color: var(--color-tertiary);
+    background-color: var(--color-fifth);
+    border: none;
+    border-radius: 7px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 400;
+    transition: all .5s ease-in-out;
+}
+
+img{
+    max-width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+ul li{    
+    list-style: none;
+}
+
+/* HEADER */
+
+.header img{
+    width: 10rem;
+}
+
+.header{
+    width: 100%;
+    height: 10rem;
+    padding: 2rem 5rem;
+    margin: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nombre-logo{
+    display: flex;
+    padding-top: 2rem;
+    margin-left: -3.6rem;
+}
+
+.letra h1{    
+    color: var(--color-fifth);
+    font-size: 3.6rem;
+}
+
+.letra-Active{
+    
+}
+
+.invisible{
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header ul li{
+    margin: 1rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header a{
+    font-size: var(--size-Paraph);
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
+.item:hover{
+    font-size: 1.7rem;
+    /* font-style: italic; */
+    transition: all .5s ease-in-out;
+}
+
+
+/* dark mode button on header */
+.dark-mode{
+    width: 3.5rem;
+    height: 1.5rem;
+    padding: 0 1rem;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    border: 1px solid var(--color-fifth);
+    border-radius: 11px;
+    transition: all .5s ease-in-out;
+}
+
+.dark img{
+    width: 1.5rem;
+    position: absolute;
+    top: -1px;
+    right: 0.1rem;
+}
+
+.light svg{
+    position: absolute;
+    top: -.8px;
+    left: 0.1rem;
+}
+
+.circle-slide{
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    top: -2px;
+    clip-path: circle(50% at center);
+    background-color: var(--color-fifth);
+    cursor: pointer;
+    transform: translateX(1.5px);
+    transition: all .5s ease-in-out;
+}
+
+.circle-active{
+    transform: translateX(-18px);
+    background-color: var(--color-primary);
+    transition: all .5s ease-in-out;
+}
+
+.circle-active-button{
+    border: 1px var(--color-primary) solid;
+    transition: all .5s ease-in-out;
+}
+
+
+/* Dark Mode Colors  */
+
+.dark-body{
+    background-color: var(--color-quarter);
+    transition: all .5s ease-in-out;
+}
+
+.dark-body h1, h2, h3, h4, h5, h6{
+    color: var(--color-primary);
+    transition: color .5s ease-in-out;
+}
+
+.dark-body a{
+    color: var(--color-tertiary);
+    transition: color .5s ease-in-out;
+}
+
+.dark-body p{
+    color: var(--color-tertiary);
+    transition: color .5s ease-in-out;
+}
+
+
+/* Secciones */
+
+.section{
+    width: 100%;
+    min-height: 61rem;
+    background-color: transparent;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Boton para volver al inicio de la pagina */
+
+
+.page-up{
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 1px;
+    bottom: 5rem;
+}
+
+.button-up{
+    width: 4rem;
+    height: 4rem;
+    background-color: #212121;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+a{
+    align-self: center;
+}
+
+.button-up img{
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+}
+

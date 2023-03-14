@@ -1,0 +1,12 @@
+button{
+    width: 20rem;
+    height: 5rem;
+    margin: 2rem;
+    padding: .5rem 2rem;
+    font-size: $sizeButton;
+    text-transform: uppercase;
+    color: $grisClaro;
+    background-color: $azul;
+    border: none;
+    border-radius: 7px;
+}
